@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Riccardo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Riccardo</a>
+      <div>
+        <a class="nav-link text-white" href="#chi-sono">Chi sono</a>
+        <a class="nav-link text-white" href="#progetti">Progetti</a>
+        <a class="nav-link text-white" href="#contatti">Contatti</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-5 bg-light">
+    <img src="assets/profile.jpg" class="rounded-circle mb-3" alt="Profilo" width="120" height="120"/>
+    <h1>Ciao, sono Riccardo</h1>
+    <p>Ingegnere biomedico con passione per la tecnologia, il design e l'innovazione.</p>
+  </header>
+
+  <!-- Chi sono -->
+  <section id="chi-sono" class="container py-5">
+    <h2>Chi sono</h2>
+    <p>Sono un ingegnere biomedico, con esperienza in ambito regolatorio dei dispositivi medici, automazione e analisi dei dati. Amo imparare, lavorare in team e costruire soluzioni utili e intuitive.</p>
+    <a href="CV_Riccardo.pdf" download class="btn btn-outline-primary mt-3">Scarica il mio CV</a>
+  </section>
+
+  <!-- Progetti -->
+  <section id="progetti" class="bg-light py-5">
+    <div class="container">
+      <h2>I miei progetti</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Analisi ECG con Python</h5>
+              <p class="card-text">Un progetto per elaborare segnali ECG reali e identificare anomalie tramite analisi del segnale e machine learning.</p>
+              <a href="https://github.com/tuo-username/ecg-analysis" target="_blank" class="btn btn-sm btn-outline-secondary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="container py-5">
+    <h2>Contattami</h2>
+    <form action="https://formspree.io/f/{TUO-ID}" method="POST" class="mt-3">
+      <div class="mb-3">
+        <input type="text" name="nome" class="form-control" placeholder="Il tuo nome" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" name="_replyto" class="form-control" placeholder="La tua email" required />
+      </div>
+      <div class="mb-3">
+        <textarea name="messaggio" class="form-control" rows="4" placeholder="Il tuo messaggio" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Invia</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Riccardo | <a href="https://github.com/tuo-username" class="text-white">GitHub</a> | <a href="https://linkedin.com/in/tuo-profilo" class="text-white">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
