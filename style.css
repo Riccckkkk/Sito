@@ -1,12 +1,77 @@
+:root {
+  --bg: #f9f6f2;
+  --text: #1a1a1a;
+  --accent: #e4b07e;
+  --light: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background-color: var(--light);
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 section h2 {
-  margin-bottom: 1rem;
-  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--accent);
 }
 
-.card-title {
-  font-weight: 600;
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
+
+.card {
+  background: var(--light);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
