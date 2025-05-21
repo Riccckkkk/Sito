@@ -75,3 +75,16 @@ footer {
   color: #999;
 }
 
+.linkedin-icon {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.linkedin-icon img {
+  transition: transform 0.3s ease;
+}
+
+.linkedin-icon img:hover {
+  transform: scale(1.1);
+}
+
